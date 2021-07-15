@@ -9,7 +9,7 @@ sap.ui.define([
      */
     function (Controller,MessageBox) {
 
-        return Controller.extend("logaligroup.Employee.controller.Main", {
+        return Controller.extend("logaligroup.Employees.controller.Main", {
 
             onBeforeRendering: function () {
                 this._detailEmployeeView = this.getView().byId("detailEmployeeView");
