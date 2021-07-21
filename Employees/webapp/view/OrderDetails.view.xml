@@ -58,6 +58,12 @@
                     </FlexBox>
                 </l:Grid>
             </Panel>
+            <Panel headerText="{i18n>orderProduct}">            
+                <List items="{  path: 'odataNorthwind>Order_Details', 
+                                parameters: { expand: 'Product' },
+                                factory: '.factoryOrderDetails'
+                            }"/>    
+            </Panel>
         </content>        
     </Page>
 </mvc:View>
